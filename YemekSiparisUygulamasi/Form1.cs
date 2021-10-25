@@ -13,7 +13,8 @@ namespace YemekSiparisUygulamasi
     
     public partial class Form1 : Form
     {
-        
+        double bakiye;
+        double mevcutbakiye;
         public Form1()
         {
             InitializeComponent();
@@ -104,6 +105,31 @@ namespace YemekSiparisUygulamasi
            
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bakiye = Convert.ToDouble(textBox1.Text);
+            double bakiyetoplam = bakiye + mevcutbakiye;
+            if (mevcutbakiye<=500&&bakiyetoplam <=500)
+            {
+                if (bakiye >= 1)
+                {
+
+                    if (textBox1.Text != "" && bakiye <= 500)
+                    {
+
+                        mevcutbakiye += bakiye;
+                        label6.Text = mevcutbakiye.ToString();
+                        textBox1.Clear();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("500 Tl den Fazla Para Yüklenemez","Bilgilendirme");
+            }
+           
+            
+           
+        }
     }
 }
