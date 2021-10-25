@@ -83,7 +83,7 @@ namespace YemekSiparisUygulamasi
                 Form1.ActiveForm.MaximizeBox = true;
             }
         }
-        
+        //Renk Seçici
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
@@ -104,15 +104,6 @@ namespace YemekSiparisUygulamasi
            
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            if (true)
-            {
-                if (true)
-                {
-
-                }
-            }
-        }
+       
     }
 }
