@@ -3,7 +3,7 @@ using System;
 
 namespace YemekSiparisUygulamasi
 {
-    partial class Form1
+    partial class SiparisForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace YemekSiparisUygulamasi
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SiparisForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();

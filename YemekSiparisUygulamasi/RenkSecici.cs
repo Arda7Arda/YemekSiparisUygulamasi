@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YemekSiparisUygulamasi
 {
-    public partial class Form2 : Form
+    public partial class RenkSecici : Form
     {
-        public Form2()
+        public RenkSecici()
         {
             InitializeComponent();
             label1.BackColor = Color.Gray;

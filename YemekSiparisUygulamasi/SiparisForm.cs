@@ -11,11 +11,11 @@ using System.Windows.Forms;
 namespace YemekSiparisUygulamasi
 {
     
-    public partial class Form1 : Form
+    public partial class SiparisForm : Form
     {
         double bakiye;
         double mevcutbakiye;
-        public Form1()
+        public SiparisForm()
         {
             InitializeComponent();
             label1.ForeColor = Color.Red;
@@ -39,13 +39,13 @@ namespace YemekSiparisUygulamasi
             {
                 label1.ForeColor = Color.Green;
                 checkBox1.Text = "True";
-                Form1.ActiveForm.ControlBox = false;
+                SiparisForm.ActiveForm.ControlBox = false;
             }
             else
             {
                 label1.ForeColor = Color.Red;
                 checkBox1.Text = "False";
-                Form1.ActiveForm.ControlBox = true;
+                SiparisForm.ActiveForm.ControlBox = true;
             }
         }
         //MinimizeBox
@@ -57,13 +57,13 @@ namespace YemekSiparisUygulamasi
             {
                 label2.ForeColor = Color.Green;
                 checkBox2.Text = "True";
-                Form1.ActiveForm.MinimizeBox = false;
+                SiparisForm.ActiveForm.MinimizeBox = false;
             }
             else
             {
                 label2.ForeColor = Color.Red;
                 checkBox2.Text = "False";
-                Form1.ActiveForm.MinimizeBox = true;
+                SiparisForm.ActiveForm.MinimizeBox = true;
             }
         }
         //MaximizeBox
@@ -75,19 +75,19 @@ namespace YemekSiparisUygulamasi
             {
                 label3.ForeColor = Color.Green;
                 checkBox3.Text = "True";
-                Form1.ActiveForm.MaximizeBox = false;
+                SiparisForm.ActiveForm.MaximizeBox = false;
             }
             else
             {
                 label3.ForeColor = Color.Red;
                 checkBox3.Text = "False";
-                Form1.ActiveForm.MaximizeBox = true;
+                SiparisForm.ActiveForm.MaximizeBox = true;
             }
         }
         //Renk Seçici
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            RenkSecici form2 = new RenkSecici();
            
             if (Application.OpenForms["Form2"] == null)
             {
@@ -99,7 +99,7 @@ namespace YemekSiparisUygulamasi
             }
             else
             {
-                MessageBox.Show("Form Açık","Uyarı");
+                MessageBox.Show("Renk Seçici Açık","Uyarı");
             }
            
            
